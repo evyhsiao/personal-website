@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <meta HTTP-EQUIV="EXPIRES" CONTENT="0">
+    <meta HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <link rel="stylesheet" href="../style/study.css">
+    <title>My Study</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="./index.html" class="home"><p>MY SPACE</p></a>
+        <a href="./study.html" class="study"><p>&emsp;STUDY</p></a>
+        <a href="./music.php" class="music"><p>&emsp;MUSIC</p></a>
+        <a href="./travel.php" class="travel"><p>&emsp;TRAVEL</p></a>
+        <a href="./contact.php" class="contact"><p>&emsp;CONTACT</p></a>
+        <!-- <a href="./login.php" class="login"><p>LOGIN</p></a> -->
+        <button id="btn" onclick="document.getElementById('id01').style.display='block';" style="width:auto;">Log in</button>
+    </div>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="./login.php" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="container">
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" name="email" required>
+                <label for="pass"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="pass" required>
+                    
+                <button type="submit">Login</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
