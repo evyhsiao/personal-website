@@ -1,0 +1,172 @@
+body {
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
+a:hover {
+    opacity: 0.9;
+    transform: scale(1.04);
+    transition: all 0.7s ease-out;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    margin: 3rem;
+}
+
+.home {
+    background-image: url("../image/home_page.jpg");
+    background-size: cover;
+    flex: 0.7;
+    margin-left: 2rem;
+}
+
+.home:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+    transition: all 0.7s ease-out;
+}
+
+h2 {
+    margin: 0px;
+    height: 100%;
+    line-height: 300%;
+    font-weight: 800;
+    font-size: 3rem;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: black 0.2em 0.2em 0.2em;
+    backdrop-filter: blur(5px);
+}
+
+.navigation {
+    flex: 0.3;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 20px;
+    padding: 0px;
+    align-items: center;
+}
+
+.study {
+    background-image: url("../image/study.jpg");
+    height: 100%;
+    background-size: cover;
+}
+
+.music {
+    background-image: url("../image/music.jpg");
+    height: 100%;
+    background-size: cover;
+}
+
+.travel {
+    background-image: url("../image/travel.jpg");
+    height: 100%;
+    background-size: cover;
+}
+
+.contact {
+    background-image: url("../image/contact.jpg");
+    height: 100%;
+    background-size: cover;
+}
+
+p {
+    margin: 0px;
+    height: inherit;
+    line-height: 500%;
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: aliceblue;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    backdrop-filter: blur(5px);
+}
+
+@media (max-width: 1270px) {
+    h2 {   
+        line-height: 280%;
+        font-size: 2.7rem;
+    }
+}
+
+@media (max-width: 1160px) {
+    h2 {   
+        line-height: 280%;
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 1060px) {
+    h2 {   
+        line-height: 280%;
+        font-size: 2.2rem;
+    }
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    h2 {   
+        line-height: 280%;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        height: 100%;
+        margin: 2rem;
+    }
+    .home {
+        flex: 0.6;
+        height: 400px;
+        margin: 0px;
+    }
+    .navigation {
+        flex: 0.4;
+        margin: 0px;
+    }
+    h2 {
+        line-height: 400%;
+        height: inherit;
+        font-size: 1.7rem;
+    }
+    p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        line-height: 300%;
+        height: inherit;
+        font-size: 1.7rem;
+
+    }
+}
+
+@media (max-width: 400px) {
+    h2 {
+        line-height: 250%;
+        height: inherit;
+        font-size: 1.5rem;
+
+    }
+}

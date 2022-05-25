@@ -1,0 +1,285 @@
+body {
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navigation {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+    height: 50px;
+    padding: 1rem 3rem;
+    align-items: center;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.721);
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.navigation button {
+    margin-left: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    width: 100%;
+    opacity: 0.9;
+    font-weight: 600;
+}
+
+a:hover {
+    opacity: 1;
+    font-size: 1.4rem;
+    transition: all 0.7s ease-out;
+}
+
+p {
+    margin: 0px;
+}
+
+.home {
+    text-align: left;
+}
+
+#Contact {
+    background-color: rgba(90, 90, 90, 0.685);
+    /* height: 600px; */
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    padding: 2rem
+}
+
+.info, form {
+    display: grid;
+    gap: 1rem;
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+.info h2 {
+    margin: 0px;
+}
+
+.info p {
+    font-size: 1.2rem;
+    width: 400px;
+}
+
+input {
+    width: 90%;
+    height: 40px;
+    border: 2px solid rgba(155, 154, 154, 0.788);
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-size: 1rem;
+}
+
+input, textarea:focus {
+    border: 3px solid #555;
+  }
+
+textarea {
+    width: 90%;
+    overflow: scroll;
+    height: 80px;
+    border: 2px solid rgba(155, 154, 154, 0.788);
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-size: 1rem;
+}
+/* 
+button {
+    background-color: #1f1e1e;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 16px 32px;
+    width: 90%;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    opacity: 0.8;
+} */
+  
+button:hover {
+    opacity: 1;
+    font-size: 1.1rem;
+    transform: scaleX(1.1);
+    transition: all 0.7s ease-out;
+}
+
+.view {
+    display: none;
+}
+
+.show {
+    display: inline;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 8px 14px;
+    /* margin-left: 50px; */
+    width: 50%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    /* width: 20px; */
+  }
+  
+  /* button:hover {
+    opacity: 0.8;
+  } */
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 8px 14px;
+    background-color: #f44336;
+  }
+  
+  .container {
+    padding: 16px;
+  }
+
+  .container button {
+    margin: 0px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  /* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 0;
+  position: relative;
+}
+
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+  .massage {
+    position: absolute;
+    top: 120px;
+    margin: 0%;
+    padding: 0%;
+    left: 80px;
+    width: 250px;
+  }
+
+  .massage ul {
+    margin: 0%;
+    padding: 0%;
+  }
+
+  .massage li {
+    list-style-type: none;
+    margin-bottom: 2rem;
+    background-color: rgba(231, 231, 231, 0.525);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .massage li:hover {
+    opacity: 0.8;
+  }
+  
+  .massage h4 {
+    margin: 10px 0px;
+  }
+
+  .massage p {
+    margin: 10px 0px;
+    word-wrap: break-word;
+  }
+
+  .massage i {
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+    justify-content: flex-end;
+    text-align: right;
+  }
